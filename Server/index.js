@@ -8,7 +8,7 @@ const cookieParser = require("cookie-parser");
 const UserModel = require("./models/User");
 const axios = require("axios"); // Import axios for OpenAI API requests
 require('dotenv').config(); // To load environment variables
-const stripe = require('stripe')('sk_test_51QBYZfKdN6zW91jA4fPTWK3iiVj4IEukmhEcEzAPdje0LwMhEl4oYy2ZmJtshlyfglW2TjB8MYYUZYOyYXzRJ0pC00ugXLYETU');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const socketIo = require('socket.io');
 const http = require('http'); // Import the http module
 const bodyParser = require('body-parser');
