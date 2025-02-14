@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
-
+const API_URL = process.env.REACT_APP_API_URL; // Load API URL from .en
 function Login() {
   const [email, setEmail] = useState('');      
   const [password, setPassword] = useState('');
