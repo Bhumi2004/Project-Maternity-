@@ -21,7 +21,7 @@ import sadIcon from './assets/sad.png';
 import { NavLink } from 'react-router-dom';
 
 
-
+const API_URL = process.env.REACT_APP_API_URL; // Load API URL from .en
 
 
 const MyComponent = () => {
