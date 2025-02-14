@@ -401,6 +401,8 @@ app.get('/resources', (req, res) => {
 
 
 // Start the server
-app.listen(3001, '0.0.0.0', () => {
-  console.log("Server is Running on port 3001");
+const PORT = process.env.PORT || 3001; // Use Render's assigned port or 3001 for local
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is Running on port ${PORT}`);
 });
+
